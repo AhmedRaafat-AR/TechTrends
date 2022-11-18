@@ -1,0 +1,92 @@
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.112:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2022 14:38:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2022 14:38:32] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /1 [GET]
+Traceback (most recent call last):
+  File "/home/dev/Documents/DevOps/CloudNative/nd064_course_1/project/techtrends/.myvenv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/dev/Documents/DevOps/CloudNative/nd064_course_1/project/techtrends/.myvenv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/dev/Documents/DevOps/CloudNative/nd064_course_1/project/techtrends/.myvenv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/dev/Documents/DevOps/CloudNative/nd064_course_1/project/techtrends/.myvenv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/dev/Documents/DevOps/CloudNative/nd064_course_1/project/techtrends/app.py", line 46, in post
+    post_title = get_post_title(post_id)
+  File "/home/dev/Documents/DevOps/CloudNative/nd064_course_1/project/techtrends/app.py", line 24, in get_post_title
+    post_title = connection.execute('SELECT * FROM title WHERE id = ?',
+sqlite3.OperationalError: no such table: title
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2022 14:38:35] "[35m[1mGET /1 HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.112:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2022 14:39:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2022 14:39:53] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /1 [GET]
+Traceback (most recent call last):
+  File "/home/dev/Documents/DevOps/CloudNative/nd064_course_1/project/techtrends/.myvenv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/dev/Documents/DevOps/CloudNative/nd064_course_1/project/techtrends/.myvenv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/dev/Documents/DevOps/CloudNative/nd064_course_1/project/techtrends/.myvenv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/dev/Documents/DevOps/CloudNative/nd064_course_1/project/techtrends/.myvenv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/dev/Documents/DevOps/CloudNative/nd064_course_1/project/techtrends/app.py", line 55, in post
+    post_title = get_post_title(post_id)
+  File "/home/dev/Documents/DevOps/CloudNative/nd064_course_1/project/techtrends/app.py", line 24, in get_post_title
+    post_title = connection.execute('SELECT * FROM title WHERE id = ?',
+sqlite3.OperationalError: no such table: title
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2022 14:39:55] "[35m[1mGET /1 HTTP/1.1[0m" 500 -
+ERROR:app:the post ID is not found a 404 page is shown
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2022 14:40:00] "[33mGET /77 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2022 14:40:00] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2022 14:40:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Nov/2022 14:40:14] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.112:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:11:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:11:56] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:11:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:12:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:12:03] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:Post Title 2020 CNCF Annual Report
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:12:05] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:12:05] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:12:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:12:21] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:The About Us page is retrieved
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:12:43] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:12:43] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:12:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:12:46] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:13:17] "GET /healthz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:14:19] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:16:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:16:39] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:16:41] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:16:41] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:16:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:16:45] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+ERROR:app:the post ID is not found a 404 page is shown
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:16:49] "[33mGET /88 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:16:49] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:17:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:17:15] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:17:20] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:17:20] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:A new article is created. title:Cloud Native Intro
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:18:49] "[32mPOST /create HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:18:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:18:49] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:Post Title Cloud Native Intro
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:18:56] "GET /7 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:18:56] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.112:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:25:47] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Nov/2022 07:26:02] "GET /metrics HTTP/1.1" 200 -

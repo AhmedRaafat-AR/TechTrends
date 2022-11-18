@@ -1,5 +1,6 @@
 import sqlite3
 import logging
+import sys
 
 from flask import Flask, json, render_template, request, url_for, redirect, flash
 
@@ -110,6 +111,6 @@ def metrics():
 # start the application on port 3111
 if __name__ == "__main__":
 
-   logging.basicConfig(filename='app.log',level=logging.DEBUG)
+   logging.basicConfig(level=logging.DEBUG, handlers=[logging.FileHandler("app.log"), logging.StreamHandler(sys.stdout)])
 
    app.run(host='0.0.0.0', port='3111')

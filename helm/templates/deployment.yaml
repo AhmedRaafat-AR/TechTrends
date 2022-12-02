@@ -21,8 +21,8 @@ spec:
         name: techtrends
         ports:
         - containerPort: {{ .Values.containerPort }}
-        resources:
-        {{ toYaml .Values.resources | indent 12 }}        
+        resources: 
+{{ toYaml .Values.resources | indent 12 }}  
         livenessProbe:
           httpGet:
             path: {{ .Values.livenessProbe.path }}

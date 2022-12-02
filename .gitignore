@@ -1,3 +1,4 @@
 .myvenv
 .vagrant
+.vscode
 *.log
